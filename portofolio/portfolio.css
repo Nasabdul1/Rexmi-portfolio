@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;   
+    list-style: none;
+    box-sizing: border-box; 
+}
+    
+.port{
+    background-image: url(img/back.png);
+    grid-template-columns: 1fr 2fr;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+}
+
+
+/* Default styles */
+
+/* Styles for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+    /* Adjust the layout or font size for smaller screens */
+  }
+  
+  /* Styles for screens with a minimum width of 601px */
+  @media (min-width: 601px) {
+    /* Styles specific to larger screens */
+  }
+  
+
+nav{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+nav ul{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    gap: 2rem;
+
+}
+
+nav ul a{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: .5s;
+    font-size: large;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.card{
+    width: 200px;
+    height: 30vh;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 1rem 2rem rgb(98, 48, 101);
+}
+
+.card1{
+    background-image: url(img/3dmodelling.jpg);
+}
+
+.card2{
+    background-image: url(img/webdevelopment.jpg);
+}
+
+.card3{
+    background-image: url(img/web3.jpg);
+}
+
+.card4{
+    background-image: url(img/marketing.jpg);
+}
+
+.card h5{
+    color: white;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px pink;
+    font-size: 12px;
+    color: white;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8rem;
+}

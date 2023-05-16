@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;   
+    list-style: none;
+    box-sizing: border-box; 
+}
+    
+.body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: animateBg 5s linear infinite;
+    max-width: 100%;
+}
+
+/* Default styles */
+
+/* Styles for screens with a maximum width of 600px */
+@media (max-width: 600px) {
+    /* Adjust the layout or font size for smaller screens */
+  }
+  
+  /* Styles for screens with a minimum width of 601px */
+  @media (min-width: 601px) {
+    /* Styles specific to larger screens */
+  }
+  
+
+#@keyframes animateBg{
+    100%{filter: hue-rotate(360deg);}
+}
+
+nav{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+nav ul{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    gap: 2rem;
+
+}
+
+nav ul a{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: .5s;
+    font-size: large;
+}
+
+p{
+    color: white;
+}
+
+.center{
+    height: calc(100px);
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    margin-top: 200px;
+}
+
+.center h1{
+    font-size: 35px;
+}
+
+.portfolio{
+    height: 100vh;
+}
+
+button{
+    background: transparent;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: background-color 0.3 ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+   background-color: transparent;
+   box-shadow: 1px 1rem 1rem orchid;
+}
+
+.center a{
+    color: white;
+}
