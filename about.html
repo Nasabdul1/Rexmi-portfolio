@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+</head>
+<body>
+    <section class="abt">
+
+        <nav>
+            <h1>REXMI</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+        </div>
+        <h1 class="ab">About Us</h1>
+            
+                  <div class="col">
+                    <h1>Welcome to Our Team!</h1>
+                    <p>At REXMI, <br>
+                         we are a talented group of individuals with a shared passion for 3D modeling, <br>
+                          web development, web 3 utilities, and marketing. <br>
+                           With several years of experience under our belts, <br>
+                            we have honed our skills and expertise to deliver top-notch solutions that cater to our clients' unique needs. <br>
+                            <br>
+                            Our team is comprised of dedicated professionals who bring a wealth of knowledge and creativity to the table. <br>
+                             We understand the importance of staying ahead in this rapidly evolving digital landscape, <br>
+                              and that's why we constantly strive to improve our skills and keep up with the latest industry trends.
+                              <br>
+                              <br>
+                              In the realm of 3D modeling, we excel at bringing ideas to life. <br>
+                              When it comes to web development, we're your go-to experts. <br>
+                              Web 3 utilities are at the forefront of our focus. We understand the potential of decentralized technologies, blockchain, and smart contracts. <br>
+                              Marketing is another area where we shine. We understand that a beautiful and functional website or application is only effective if it reaches the right audience
+                        </p>
+                  </div>
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+    
+            toggleIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+       </script>
+</body>
+</html>
+
+</body>
+</html>

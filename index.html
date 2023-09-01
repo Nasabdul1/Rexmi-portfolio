@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/579fd210ac.js" crossorigin="anonymous"></script>
+    <title>REXMI</title>
+</head>
+<body>
+        <section class="body">
+            <nav>
+                <h1>REXMI</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </div>
+            </nav>
+
+            <div class="dropdown_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+            </div>
+
+                <div class="center">
+                    <h1>Welcome great minds glad to have you here!</h1>
+                    <br>
+                    <p>Let's create something Amazing together</p>
+                    <br><br>
+                    <button><a href="portfolio.html">Take a tour</a></button>
+                </div>
+                
+        </section>
+        
+   <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+    }
+   </script>
+</body>
+</html>

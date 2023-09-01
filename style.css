@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0%;
+    text-decoration: none;   
+    list-style: none;
+    box-sizing: border-box; 
+}
+    
+.body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg{
+    100%{filter: hue-rotate(360deg);}
+}
+
+nav{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+}
+
+nav ul{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul a{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: .5s;
+    font-size: large;
+}
+
+p{
+    color: white;
+}
+
+.center{
+    height: calc(100px);
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+    margin-top: 200px;
+}
+
+.center h1{
+    font-size: 35px;
+}
+
+.portfolio{
+    height: 100vh;
+}
+
+button{
+    background: transparent;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: background-color 0.3 ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+   background-color: transparent;
+   box-shadow: 1px 1rem 1rem orchid;
+}
+
+.center a{
+    color: white;
+}
+
+/* /============Responsive part==============/ */
+
+.dropdown_menu a{
+    color: white;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    border-radius: 10px;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    height: 0px;
+    overflow: hidden;
+}
+
+.dropdown_menu li{
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.toggle_btn{
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+@media(max-width:769px){
+    .dropdown_menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+        font-size: 25px;
+    }
+    nav h1{
+        font-size: 30px;
+    }
+    .center{
+        padding: 2rem;
+    }
+}
+@media(max-width:321px){
+    .dropdown_menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .toggle_btn{
+        font-size: 18px;
+        padding: 0px;
+    }  
+    nav h1{
+        font-size: 20px;
+    }
+    .center{
+        padding: 1rem;
+        margin-top: 110px;
+    }
+    nav{
+        padding: 2rem;
+
+    }
+    .center h1{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .card{
+        width: 50px;height: 7.5vh;
+    }
+}
+@media(max-width:376px){
+    .dropdown_menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .toggle_btn{
+        font-size: 20px;
+        padding: 0px;
+    }  
+    nav h1{
+        font-size: 25px;
+    }
+    .center{
+        padding: 2rem;
+        margin-top: 120px;
+    }
+    nav{
+        padding: 2rem;
+    }
+    .center h1{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+}
+@media(max-width:426px){
+    .dropdown_menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .toggle_btn{
+        font-size: 20px;
+        padding: 0px;
+    }  
+    nav h1{
+        font-size: 25px;
+    }
+    .center{
+        padding: 2rem;
+    }
+    nav{
+        padding: 2rem;
+    }
+    .center h1{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+}
+
+    
+.port{
+    background-image: url(img/port.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+a:hover{
+    color: blueviolet;
+    transition: .5s;
+    font-size: large;
+}
+
+.abt{
+    background-image: url(img/about.png);
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.ab{
+    font-size: 25px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.col{
+    padding: 3rem;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+
+}
+
+.col h1{
+    font-size: 12px;
+
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem;
+    gap: 10px;
+    /* background-color: blue; */
+    margin-top: 40px;
+}
+
+.box{
+    width: 300px;
+    height: 380px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.box:hover{
+    transition: transform 0.5s;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+.box1{
+    background-image: url(img/3dmodelling.jpg);
+}
+.box2{
+    background-image: url(img/webdevelopment.jpg);
+}
+.box3{
+    background-image: url(img/marketing.jpg);
+}
+.box4{
+    background-image: url(img/technology.jpg);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+p{
+   text-shadow: 0 0 15px #000;
+   font-size: 12px;
+}
+
+
+/* //3d.html */
+
+.jam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(img/about.png);
+    padding: 0 35px;
+    background-size: cover;
+}
+
+.levy{
+    max-width: 1200px;
+    position: relative; 
+}
+
+.levy .boxy{
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.levy img{
+    height: 240px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+    border-radius: 15px;
+    /* transition: transform 0.5s; */
+}
+
+.levy img:hover{
+    /* height: 260px; */
+}
+
+.levy img:first-child{
+    margin-left: 0px;
+}
+
+.jam i{
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 46px;
+    /* background: white; */
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+}
+
+.jam i:first-child{
+    left: -23px
+}
+
+.jam i:last-child{
+    right: -23px
+}
+
+@media screen and (max-width: 900px) {
+    .levy img{
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .levy img{
+        width: 100%;
+    }
+}
