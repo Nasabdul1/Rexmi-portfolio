@@ -130,7 +130,7 @@ h1, h2{
 
 p{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -149,7 +149,7 @@ p{
 
 #angles-down{
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 70px;
     color: white;
     font-size: 20px;
     display: flex;
@@ -168,7 +168,7 @@ p{
 }
 
 .portfolio{
-    height: 100vh;
+    height: 60vh;
     background-color: black;
     padding: 10px;
 }
@@ -177,11 +177,12 @@ p{
     height: 450px;
     width: 100%;
     background: none;
-    transform: translateY(10%);
+    transform: translateY(-15%);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
     padding: 10px;
+    padding-bottom: 60px;
 }
 
   
@@ -322,6 +323,10 @@ h3{
   width: 100%;
   background: none;
   padding: 10px;
+}
+
+.mytext p{
+  font-size: 20px;
 }
 
 a{
@@ -546,6 +551,7 @@ p{
   padding: 10px;
   perspective: 750px;
   margin: 0;
+  margin-bottom: 200px;
 }
 
 .title {
