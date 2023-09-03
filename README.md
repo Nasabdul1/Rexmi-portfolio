@@ -1,2 +1,0 @@
-# Rexmi-portfolio
-my portfolio
