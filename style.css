@@ -168,13 +168,13 @@ p{
 }
 
 .portfolio{
-    height: 60vh;
+    height: 40vh;
     background-color: black;
     padding: 10px;
 }
 
 .container{
-    height: 450px;
+    height: 100%;
     width: 100%;
     background: none;
     transform: translateY(-15%);
@@ -534,9 +534,9 @@ p{
 }
 
 .container{
-  height: 550px;
+  height: 100%;
   background: none;
-  transform: translateY(0);
+  transform: translateY(25%);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5px;
